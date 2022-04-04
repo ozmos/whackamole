@@ -14,6 +14,13 @@ body {
   font-family: 'Amatic SC', cursive;
 }
 
+main {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    justify-items: start;
+}
+
 h1 {
   text-align: center;
   font-size: 10rem;
@@ -29,11 +36,24 @@ h1 {
 }
 
 .game {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+@media(min-width:600px) {
+    .game {
+        height: 400px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
 
 .hole {
